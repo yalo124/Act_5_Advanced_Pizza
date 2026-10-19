@@ -87,3 +87,5 @@ public class PIZZA extends PizzaBase implements Discountable {
         return finalizePrice(getBaseAmount());
     }
 }
+
+// add comment documentation for how the computation works
