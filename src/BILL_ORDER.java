@@ -1,9 +1,9 @@
 public class BILL_ORDER {
     public double OUT(PIZZA p) {
         double bill = p.getPrice();
-        System.out.println("----------------------------------------");
-        System.out.println("ORDER DETAILS");
-        System.out.println("----------------------------------------");
+        System.out.println("========================================");
+        System.out.println("\t\tORDER DETAILS");
+        System.out.println("========================================");
         System.out.println("Pizza Type: " + p.getPizzaType());
         System.out.println("Toppings: " + p.getToppings());
         System.out.printf("Diameter: %.2f cm%n", p.getDiameterCm());

@@ -15,4 +15,6 @@ public class SPECIAL_PIZZA extends PIZZA {
     }
 }
 
-// add comment documentation how the pizza charge affects the price
+/*
+* price = price + 50 pesos + howmany
+* */

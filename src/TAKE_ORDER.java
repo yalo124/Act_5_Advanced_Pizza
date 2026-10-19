@@ -21,6 +21,7 @@ public class TAKE_ORDER {
         double amountDue = bill.OUT(pie);
 
         double received = askPayment(amountDue);
+        System.out.printf("\nAmount Received: PHP %.2f%n", received);
         System.out.printf("Change: PHP %.2f%n", received - amountDue);
         System.out.println("========================================");
     }
@@ -72,6 +73,7 @@ public class TAKE_ORDER {
             System.out.println("\nAvailable Discounts:");
             System.out.println("Senior Citizen (20%)");
             System.out.println("VIPCard (12%)");
+            System.out.println("No Discount");
             System.out.print("Enter Type of Discount: ");
             try { p.setDiscount(sc.nextLine()); return; }
             catch (IllegalArgumentException e) { System.out.println(e.getMessage()); }

@@ -62,7 +62,7 @@ public class PIZZA extends PizzaBase implements Discountable {
 
     public String getToppings() { return toppings; }
     public int getDiameter() { return diameter; } // no usage
-    public double getDiameterCm() { return diameter * CM_PER_INCH; } // put the cm_per_inch in getDiameter
+    public double getDiameterCm() { return getDiameter() * CM_PER_INCH; } // put the cm_per_inch in getDiameter
     public int getHowMany() { return howMany; }
     public String getDiscount() { return discount; }
     public double getPrice() { return price; }
@@ -88,4 +88,14 @@ public class PIZZA extends PizzaBase implements Discountable {
     }
 }
 
-// add comment documentation for how the computation works
+/*
+* regular pizza:
+* diameter = inch to cm. inch_input * 2.54
+* size = diameter * 5
+* pizza_topping = pizza topping + size
+* quantity = pizza_topping * howmany
+* price = quantity
+*
+* if it has discount:
+* discount_price = price - (price * discountrate)
+* */
