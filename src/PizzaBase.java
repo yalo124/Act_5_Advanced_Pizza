@@ -1,9 +1,6 @@
-
 public abstract class PizzaBase {
-    protected static final double INCH_TO_CM = 2.54;
-
     public double toCentimeters(int inches){
-        return inches * INCH_TO_CM;
+        return inches * 2.54;
     }
 
     public abstract double calculatePrice();

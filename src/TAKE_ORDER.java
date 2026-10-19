@@ -70,7 +70,7 @@ public class TAKE_ORDER {
             diameter = scan.nextInt();
             scan.nextLine();
             if(diameter <= 0){
-                System.out.println("Invalid Diameter");
+                System.out.println("Minimum size: 1");
             }
         }
 

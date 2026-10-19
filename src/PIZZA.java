@@ -70,7 +70,6 @@ public class PIZZA extends PizzaBase implements Discountable {
                 discount = 0.12;
             }
 
-
         return String.format("%.0f%%", discount * 100);
     }
 
