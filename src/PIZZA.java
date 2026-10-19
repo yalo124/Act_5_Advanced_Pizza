@@ -33,7 +33,7 @@ public class PIZZA extends PizzaBase implements Discountable {
     }
     public int getDiameter() {
         return diameter;
-    }
+    } // no usage.
     public int getHowMany() {
         return howMany;
     }
@@ -42,7 +42,7 @@ public class PIZZA extends PizzaBase implements Discountable {
     }
     public double getDiameterInCm() {
         return diameter * 2.54;
-    }////double check
+    }////double check // redundant. the  *2.54 can be put in the getDiameter()
 
     @Override
     public double getDiscountRate() {
