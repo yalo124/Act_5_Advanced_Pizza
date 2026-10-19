@@ -5,7 +5,7 @@ public class TAKE_ORDER {
 
     public static void main(String[] args) {
         System.out.println("========================================");
-        System.out.println("PIZZA ORDERING SYSTEM");
+        System.out.println("\t\tPIZZA ORDERING SYSTEM");
         System.out.println("========================================");
 
         PIZZA pie = askPizzaType();
@@ -26,7 +26,7 @@ public class TAKE_ORDER {
     }
 
     private static PIZZA askPizzaType() {
-        System.out.println("Enter Pizza Type:\n1. Regular Pizza\n2. Special Pizza");
+        System.out.println("Enter Pizza Type:\n1. Regular Pizza\n2. Special Pizza (Extra Toppings Additional PHP 50 per pizza)");
         while (true) {
             System.out.print("Choice: ");
             String c = sc.nextLine().trim();
@@ -38,6 +38,11 @@ public class TAKE_ORDER {
 
     private static void askToppings(PIZZA p) {
         while (true) {
+            System.out.println("\n========MENU========");
+            System.out.println("TOPPINGS ========== PRICE");
+            System.out.println("PEPPERONI ========= 100");
+            System.out.println("HAM AND CHEESE ==== 150");
+            System.out.println("HAWAIIAN ========== 200");
             System.out.print("Enter Toppings: ");
             try { p.setToppings(sc.nextLine()); return; }
             catch (IllegalArgumentException e) { System.out.println(e.getMessage()); }
@@ -64,6 +69,9 @@ public class TAKE_ORDER {
 
     private static void askDiscount(PIZZA p) {
         while (true) {
+            System.out.println("\nAvailable Discounts:");
+            System.out.println("Senior Citizen (20%)");
+            System.out.println("VIPCard (12%)");
             System.out.print("Enter Type of Discount: ");
             try { p.setDiscount(sc.nextLine()); return; }
             catch (IllegalArgumentException e) { System.out.println(e.getMessage()); }
